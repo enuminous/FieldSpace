@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="FieldSpace: the EFMW 165-triplet field-interaction formulation over an 11-sector field space.">
+  <title>FieldSpace — EFMW 165</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="FieldSpace home">
+      <span class="mark" aria-hidden="true">∴</span>
+      <span>FieldSpace</span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="#theorems">Theorems</a>
+      <a href="#laws">Laws</a>
+      <a href="#open">Open work</a>
+      <a href="EFMW_165_field_equations.txt">Equation set</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">EFMW · 11 sectors · 165 triplets</p>
+      <h1>A complete three-sector interaction atlas.</h1>
+      <p class="lede">
+        FieldSpace enumerates every unordered three-sector projection of
+        <code>{E, M, S, F, W, T, I, R, H, P, A}</code> and assigns a coupled
+        field-equation block to each projection.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="EFMW_165_field_equations.txt">Read all equations</a>
+        <a class="button" href="COMMENTARY.md">Technical commentary</a>
+      </div>
+      <div class="notice">
+        <strong>Status:</strong> proposed phenomenological formulation; independently unreviewed.
+        The combinatorial statements below are structural facts of the catalog. Physical validity of
+        the proposed couplings remains to be established.
+      </div>
+    </section>
+
+    <section class="stats" aria-label="FieldSpace statistics">
+      <article><strong>11</strong><span>field sectors</span></article>
+      <article><strong>165</strong><span>unique triplets</span></article>
+      <article><strong>45</strong><span>triplets per sector</span></article>
+      <article><strong>585</strong><span>displayed equation statements</span></article>
+    </section>
+
+    <section id="theorems" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Structural results</p>
+        <h2>Theorems of the FieldSpace index</h2>
+        <p>
+          These are combinatorial results and file-audit properties. They do not assert that the
+          field equations describe nature.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card theorem">
+          <span class="tag">Theorem 1</span>
+          <h3>Triplet completeness</h3>
+          <p>Every unordered three-sector subset of the 11-sector space occurs exactly once.</p>
+          <pre><code>|T| = C(11,3) = 165</code></pre>
+          <p class="proof"><strong>Reason:</strong> choosing 3 distinct sectors from 11 without order gives 165 combinations.</p>
+        </article>
+
+        <article class="card theorem">
+          <span class="tag">Theorem 2</span>
+          <h3>Uniform sector participation</h3>
+          <p>Each sector appears in exactly 45 triplets.</p>
+          <pre><code>deg(v) = C(10,2) = 45</code></pre>
+          <p class="proof"><strong>Reason:</strong> fix one sector and choose the remaining two from the other ten.</p>
+        </article>
+
+        <article class="card theorem">
+          <span class="tag">Theorem 3</span>
+          <h3>Uniform pair participation</h3>
+          <p>Every unordered pair of sectors appears together in exactly 9 triplets.</p>
+          <pre><code>λ₂ = 11 − 2 = 9</code></pre>
+          <p class="proof"><strong>Reason:</strong> after fixing a pair, any of the remaining nine sectors can be the third member.</p>
+        </article>
+
+        <article class="card theorem">
+          <span class="tag">Theorem 4</span>
+          <h3>Six-class partition</h3>
+          <p>The 165 triplets partition by sector type into six disjoint classes.</p>
+          <table>
+            <thead><tr><th>Class</th><th>Count</th></tr></thead>
+            <tbody>
+              <tr><td>3 scalar</td><td>56</td></tr>
+              <tr><td>1 gauge + 2 scalar</td><td>56</td></tr>
+              <tr><td>gravity + 2 scalar</td><td>28</td></tr>
+              <tr><td>gravity + gauge + scalar</td><td>16</td></tr>
+              <tr><td>2 gauge + scalar</td><td>8</td></tr>
+              <tr><td>gravity + 2 gauge</td><td>1</td></tr>
+            </tbody>
+            <tfoot><tr><th>Total</th><th>165</th></tr></tfoot>
+          </table>
+        </article>
+
+        <article class="card theorem">
+          <span class="tag">Theorem 5</span>
+          <h3>Incidence identity</h3>
+          <p>Counting sector–triplet incidences by triplets or by sectors gives the same total.</p>
+          <pre><code>165 × 3 = 11 × 45 = 495</code></pre>
+          <p class="proof"><strong>Use:</strong> a compact consistency check on the complete triplet index.</p>
+        </article>
+
+        <article class="card theorem">
+          <span class="tag">Theorem 6</span>
+          <h3>Equation-count identity</h3>
+          <p>The current source contains 585 displayed equation statements.</p>
+          <pre><code>45 Einstein
++ 180 gauge statements
++ 360 scalar equations
+= 585</code></pre>
+          <p class="proof"><strong>Note:</strong> 165 counts coupled triplet blocks, not literal equations.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="laws" class="section alt">
+      <div class="section-heading">
+        <p class="eyebrow">Equation families</p>
+        <h2>Relevant laws represented in the source</h2>
+        <p>
+          These names identify established mathematical or physical equation families used by the
+          formulation. They should not be read as validation of the new cross-sector couplings.
+        </p>
+      </div>
+
+      <div class="law-list">
+        <article>
+          <div>
+            <span class="law-number">01</span>
+            <h3>Einstein field equation family</h3>
+          </div>
+          <p>
+            Triplets containing <code>E</code> use an Einstein-tensor equation of the form
+            <code>Gμν + Λgμν = κ(…)</code>, with scalar, gauge, and mixed interaction stress terms.
+          </p>
+          <p class="meta">Appears in 45 triplets.</p>
+        </article>
+
+        <article>
+          <div>
+            <span class="law-number">02</span>
+            <h3>M-sector gauge field equation</h3>
+          </div>
+          <p>
+            Triplets containing <code>M</code> include a covariant gauge-divergence equation with
+            channel-dependent currents and mixed interaction terms.
+          </p>
+          <p class="meta">Maxwell-like / gauge-field structure; exact index notation in the source requires normalization review.</p>
+        </article>
+
+        <article>
+          <div>
+            <span class="law-number">03</span>
+            <h3>M-sector Bianchi identity</h3>
+          </div>
+          <p>
+            The source pairs the M gauge equation with an antisymmetrized derivative identity,
+            corresponding in conventional notation to the electromagnetic Bianchi identity.
+          </p>
+          <p class="meta">A geometric identity for a field strength when the standard interpretation applies.</p>
+        </article>
+
+        <article>
+          <div>
+            <span class="law-number">04</span>
+            <h3>S-sector gauge field equation</h3>
+          </div>
+          <p>
+            Triplets containing <code>S</code> use a second gauge-type field equation with currents
+            and mixed terms. The source calls this the symmetry gauge sector.
+          </p>
+          <p class="meta">Its exact gauge group and transformation law are not specified in the source.</p>
+        </article>
+
+        <article>
+          <div>
+            <span class="law-number">05</span>
+            <h3>S-sector Bianchi identity</h3>
+          </div>
+          <p>
+            The S field strength is likewise accompanied by an antisymmetrized derivative identity.
+          </p>
+          <p class="meta">Formal interpretation depends on the eventual definition of the S gauge field.</p>
+        </article>
+
+        <article>
+          <div>
+            <span class="law-number">06</span>
+            <h3>Covariant Klein–Gordon-type scalar law</h3>
+          </div>
+          <p>
+            Scalar sectors use equations built around <code>□g φX + mX²φX</code>, augmented by
+            curvature and cross-sector couplings.
+          </p>
+          <p class="meta">There are 360 scalar equations across the full triplet catalog.</p>
+        </article>
+
+        <article>
+          <div>
+            <span class="law-number">07</span>
+            <h3>Non-minimal curvature coupling</h3>
+          </div>
+          <p>
+            Scalar equations include terms of the form <code>ξX R φX</code>, a standard curved-spacetime
+            scalar-field structure, alongside EFMW-specific phenomenological couplings.
+          </p>
+          <p class="meta">Its interpretation in triplets without E is an explicit open question.</p>
+        </article>
+
+        <article>
+          <div>
+            <span class="law-number">08</span>
+            <h3>Mixed interaction stress</h3>
+          </div>
+          <p>
+            Gravitational blocks include <code>Tμν(int)</code> as a container for mixed interaction stress.
+          </p>
+          <p class="meta">This is a source-defined placeholder, not yet a derived conservation law.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="open" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Not yet theorems</p>
+        <h2>Relevant principles still to be derived</h2>
+        <p>
+          These are important consistency targets, but the current source does not yet prove them.
+        </p>
+      </div>
+
+      <div class="open-grid">
+        <article>
+          <h3>Master action principle</h3>
+          <p>Derive every triplet from one Lagrangian or another explicit generating rule.</p>
+        </article>
+        <article>
+          <h3>Projection consistency</h3>
+          <p>Show that overlapping triplets are mutually compatible restrictions of larger sector models.</p>
+        </article>
+        <article>
+          <h3>Stress-energy conservation</h3>
+          <p>Derive the appropriate covariant conservation relation for the total interacting system.</p>
+        </article>
+        <article>
+          <h3>Noether structure</h3>
+          <p>Specify continuous symmetries and derive their conserved currents rather than assuming them.</p>
+        </article>
+        <article>
+          <h3>Gauge invariance</h3>
+          <p>Define the M and S gauge transformations and prove invariance or specify controlled symmetry breaking.</p>
+        </article>
+        <article>
+          <h3>Dimensional consistency</h3>
+          <p>Assign dimensions to every field and coupling and mechanically verify every term in all 165 blocks.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="source-panel">
+      <div>
+        <p class="eyebrow">Primary artifacts</p>
+        <h2>Read the source, not just the summary.</h2>
+      </div>
+      <div class="source-links">
+        <a href="EFMW_165_field_equations.txt">Complete equation set <span>→</span></a>
+        <a href="README.md">Repository README <span>→</span></a>
+        <a href="COMMENTARY.md">Technical commentary <span>→</span></a>
+        <a href="https://github.com/enuminous/FieldSpace">GitHub repository <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>FieldSpace · EFMW 165-triplet formulation · source snapshot September 29, 2026</p>
+    <p>Structural claims are separated from unverified physical claims by design.</p>
+  </footer>
+</body>
+</html>
