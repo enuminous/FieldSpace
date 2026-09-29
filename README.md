@@ -4,6 +4,16 @@ EFMW FieldSpace is a repository for the complete 165-triplet field-interaction f
 
 The present formulation treats EFMW as an 11-sector field space and enumerates every possible three-sector projection. The primary source file is preserved as supplied; this repository's commentary describes its structure, scope, and formalization requirements without silently rewriting the equations.
 
+
+## Website
+
+A compact technical reference site is included at [index.html](./index.html). It presents the structural theorems of the 11-sector / 165-triplet index, the relevant field-equation families, and a separate list of consistency principles that remain to be derived.
+
+The site is GitHub Pages-ready from the repository root. Once Pages is enabled for the `main` branch / root directory, the expected public address is:
+
+`https://enuminous.github.io/FieldSpace/`
+
+
 ## Repository contents
 
 - EFMW_165_field_equations.txt — complete master set of field equations for all 165 triplets.
