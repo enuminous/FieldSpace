@@ -11,7 +11,7 @@ class FieldSpaceAuditTests(unittest.TestCase):
 
     def test_current_source_defect_is_detected(self):
         text=Path("EFMW_165_field_equations.txt").read_text()
-        rx=re.compile(r"^=== Triplet \\('([A-Z])', '([A-Z])', '([A-Z])'\\) ===$",re.M)
+        rx=re.compile(r"^=== Triplet \('([A-Z])', '([A-Z])', '([A-Z])'\) ===$", re.M)
         headings=[tuple(m.groups()) for m in rx.finditer(text)]
         observed={"".join(sorted(t)) for t in headings}
         expected={"".join(sorted(t)) for t in combinations(SECTORS,3)}
