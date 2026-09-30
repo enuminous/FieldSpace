@@ -1,0 +1,47 @@
+{
+  "status": "toy structural simulation only; not physical validation",
+  "run_count": 235,
+  "all_stable": true,
+  "base": {
+    "stable": true,
+    "final_norm": 0.0905616931132559,
+    "peak": 0.245,
+    "mean_tail": 0.08179413397221197,
+    "max_abs_final": 0.06657531159925456
+  },
+  "term_ablations": {
+    "term_no_pair": {
+      "stable": true,
+      "final_norm": 0.0824178557867703,
+      "peak": 0.245,
+      "mean_tail": 0.07294172591200672,
+      "max_abs_final": 0.06506131981370251
+    },
+    "term_no_triple": {
+      "stable": true,
+      "final_norm": 0.09068838251732399,
+      "peak": 0.245,
+      "mean_tail": 0.08196100060164868,
+      "max_abs_final": 0.06653882262749881
+    },
+    "term_linear_only": {
+      "stable": true,
+      "final_norm": 0.08251789179637975,
+      "peak": 0.245,
+      "mean_tail": 0.07306186253503649,
+      "max_abs_final": 0.06511100763131693
+    }
+  },
+  "single_sector_delta_range": [
+    -0.01097090159015661,
+    0.006243000511639549
+  ],
+  "two_sector_delta_range": [
+    -0.02040107038684521,
+    0.010923239677316482
+  ],
+  "three_sector_delta_range": [
+    -0.031502537004656585,
+    0.011168149448671671
+  ]
+}
