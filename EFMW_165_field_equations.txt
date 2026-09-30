@@ -998,3 +998,13 @@ Scalar H: □_g φ_H + m_H^2 φ_H + ξ_H R φ_H + λ_HS S_{αβ}S^{αβ} + λ_HA
 Scalar A: □_g φ_A + m_A^2 φ_A + ξ_A R φ_A + λ_AS S_{αβ}S^{αβ} + λ_AH φ_H + λ_AHS φ_H S_{αβ}S^{αβ} = 0
 
 === Triplet ('S', 'P', 'A') ===
+S-gauge:
+  ∇_μ S_{μν}^{μν} = κ_SP φ_P ∇^ν φ_P + κ_SA φ_A ∇^ν φ_A + κ_SPA Ξ^ν
+  ∇_[μ S_{μν}_{νρ]} = 0
+Scalar P: □_g φ_P + m_P^2 φ_P + ξ_P R φ_P + λ_PS S_{αβ}S^{αβ} + λ_PA φ_A + λ_PAS φ_A S_{αβ}S^{αβ} = 0
+Scalar A: □_g φ_A + m_A^2 φ_A + ξ_A R φ_A + λ_AS S_{αβ}S^{αβ} + λ_AP φ_P + λ_APS φ_P S_{αβ}S^{αβ} = 0
+
+=== Triplet ('H', 'P', 'A') ===
+Scalar H: □_g φ_H + m_H^2 φ_H + ξ_H R φ_H + λ_HP φ_P + λ_HA φ_A + λ_HPA φ_P φ_A = 0
+Scalar P: □_g φ_P + m_P^2 φ_P + ξ_P R φ_P + λ_PH φ_H + λ_PA φ_A + λ_PHA φ_H φ_A = 0
+Scalar A: □_g φ_A + m_A^2 φ_A + ξ_A R φ_A + λ_AH φ_H + λ_AP φ_P + λ_AHP φ_H φ_P = 0
