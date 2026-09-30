@@ -46,6 +46,7 @@ theorem triple_ablation_difference
     scalarTripletResidual base lij lik lijk phij phik -
       scalarTripletResidual base lij lik 0 phij phik =
       lijk * phij * phik := by
+  unfold scalarTripletResidual
   ring
 
 end FieldSpace
