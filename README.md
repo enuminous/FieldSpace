@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> **2026-09-29 Zoo/formal audit:** direct parsing of the frozen source finds **164 triplet headings, 163 populated blocks, and 578 displayed statements**, not the documented 165/585. The existing S-P-A heading is empty and H-P-A is absent. The source is intentionally preserved unchanged. See [AUDIT_2026-09-29.md](./AUDIT_2026-09-29.md), [ZOO_46_RUN.md](./ZOO_46_RUN.md), [THEOREM_REGISTER.md](./THEOREM_REGISTER.md), the [Lean formalization](./FieldSpace.lean), and the [toy simulator](./sim/fieldspace_sim.py).
+
 # FieldSpace
 
 EFMW FieldSpace is a repository for the complete 165-triplet field-interaction formulation supplied as the current EFMW field-space master set.
