@@ -1,0 +1,44 @@
+name: FieldSpace audit, simulation, and Lean
+
+on:
+  push:
+    branches:
+      - "fieldspace-zoo-lean-sim-*"
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  python-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Source audit
+        run: python scripts/audit_fieldspace.py
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Reproduce all 235 simulation/ablation runs
+        run: |
+          rm -rf /tmp/fieldspace-results
+          python sim/fieldspace_sim.py --outdir /tmp/fieldspace-results
+          test "$(($(wc -l < /tmp/fieldspace-results/ablation_results.csv)-1))" -eq 235
+
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install elan / Lean toolchain
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Resolve dependencies
+        run: lake update
+      - name: Build formalization
+        run: lake build
