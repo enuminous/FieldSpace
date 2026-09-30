@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> **2026-09-29 Zoo/formal audit:** direct parsing of the frozen source finds **164 triplet headings, 163 populated blocks, and 578 displayed statements**, not the documented 165/585. The existing S-P-A heading is empty and H-P-A is absent. The source is intentionally preserved unchanged. See [AUDIT_2026-09-29.md](./AUDIT_2026-09-29.md), [ZOO_46_RUN.md](./ZOO_46_RUN.md), [THEOREM_REGISTER.md](./THEOREM_REGISTER.md), the [Lean formalization](./FieldSpace.lean), and the [toy simulator](./sim/fieldspace_sim.py).
+> **2026-09-29 source-integrity correction:** an audit detected that the originally uploaded equation file had been truncated at its tail, leaving the S-P-A body empty and omitting H-P-A. The source has now been restored to the intended complete form: **165 triplet blocks, 165 populated triplets, 585 displayed statements, and 45 incidences per sector**. The dated audit remains in the repository as provenance of the truncation/correction event. See [AUDIT_2026-09-29.md](./AUDIT_2026-09-29.md), [ZOO_46_RUN.md](./ZOO_46_RUN.md), [THEOREM_REGISTER.md](./THEOREM_REGISTER.md), the [Lean formalization](./FieldSpace.lean), and the [toy simulator](./sim/fieldspace_sim.py).
 
 # FieldSpace
 
