@@ -1,6 +1,6 @@
 # Proposed master action for the EFMW FieldSpace atlas
 
-Status: proposed generating principle, October 2026. Not part of enuminous/FieldSpace. Not reviewed. Not fitted. Not a claim that the 11 sectors are physical fields.
+Status: proposed generating principle, October 2026. Included in `enuminous/FieldSpace`, but separate from the verbatim source snapshot. Not independently reviewed. Not fitted. Not a claim that the 11 sectors are physical fields.
 
 The source file EFMW_165_field_equations.txt is a catalogue of 165 triplet blocks. This note supplies one action whose Euler–Lagrange equations restrict to those blocks. Geometry is taken as universal background structure (commentary interpretation A). E is the dynamical gravity channel: the metric is varied only in blocks that contain E. Gauge expressions are written in standard form; the source strings ∇_μ F_{μν}^{μν} and ∇_[μ F_{μν}_{νρ]} are treated as the divergence and Bianchi identity below, which is a normalization, not a silent rewrite of the source file.
 
@@ -151,3 +151,10 @@ It fixes the open definitions of T^{(int)} and Ξ, forces reciprocal pair coupli
 It does not fix units, choose numerical couplings, prove stability, or recover a measured limit beyond the empty statement that λ = γ = 0 and all but one scalar set to zero returns Einstein–Maxwell plus a Klein–Gordon field. The γ terms should be dropped unless a broken-gauge mechanism is supplied. Conservation ∇^μ T_{μν} = 0 holds on shell only for the gauge-invariant truncation γ = 0, by diffeomorphism invariance of the action.
 
 Known-theory limit used as the failure condition: κ = 8πG, λ = γ = ξ = 0, Λ kept, only M active, gives the Einstein–Maxwell equations. Any later fit that cannot reach that limit is a different theory, not a restriction of this action.
+
+
+## Formal status update — 2026-10-06
+
+The separate [`enuminous/EFMW_Post156_Zoo_Audit`](https://github.com/enuminous/EFMW_Post156_Zoo_Audit) now kernel-checks a corrected **projected-gluing** specification for the FieldSpace atlas. The checked theorem restricts both field inputs and equation outputs and proves reconstruction/uniqueness within an explicit component-indexed interaction class. It also preserves the counterexample to the older zero-padded full-vector gluing claim.
+
+This mathematical result does **not** verify that the action above is the physical action of the source catalogue. In particular, physical mixed current/stress definitions with units and transformation laws, the vacuum convention, conservation closure, and empirical validation remain separate obligations.
