@@ -1,3 +1,7 @@
+# Status note — 2026-10-06
+
+This Zoo run records the original source-tail defect as it existed before repair. The current source is restored to 165 populated triplets / 585 statements. Subsequent work added a proposed master action and the separate Post-156 audit kernel-checked a corrected projected-gluing theorem. Historical FAIL/FLAG entries below should therefore be read as provenance of the detected truncation, not as the current repository state.
+
 # Canonical 46-Animal Zoo Audit — FieldSpace
 
 Scope: structural source, equation grammar, formalizability, and the deterministic toy simulator in this branch. Animals requiring empirical longitudinal, causal, medical, organizational, or deployment data are marked OPEN/N-A rather than receiving invented scores.
@@ -53,9 +57,9 @@ Scope: structural source, equation grammar, formalizability, and the determinist
 
 ## Composite Zoo result
 
-**Structural status:** useful, highly machine-tractable interaction atlas with a repairable source-tail defect.
+**Structural status:** useful, highly machine-tractable interaction atlas; the source-tail defect identified by this run was repaired on 2026-09-29/30 and the current source is complete.
 
-**Formal status:** several nontrivial indexing/ablation/gluing theorems are provable; the field equations themselves remain largely postulated because definitions and a master action are absent.
+**Formal status:** indexing and ablation results are formalized locally; a proposed master action now exists; and a corrected projected-gluing theorem is kernel-checked in `enuminous/EFMW_Post156_Zoo_Audit`. The field equations remain physically unvalidated, with mixed source definitions, units, conservation and empirical closure still open.
 
 **Empirical status:** independently unvalidated.
 
