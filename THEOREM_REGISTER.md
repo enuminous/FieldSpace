@@ -4,8 +4,9 @@ Status labels:
 
 - **PROVED-STRUCTURAL** — follows from finite combinatorics/algebra and is formalized in Lean.
 - **PROVED-ALGEBRAIC** — follows from the generic residual form and is formalized in Lean.
-- **CANDIDATE-CONSISTENCY-LAW** — required or strongly suggested by a coherent master theory, but not established by the current source.
-- **OPEN-PHYSICS** — requires definitions, data, or a master action.
+- **PROVED-PROJECTED-GLUING** — kernel-checked in the separate Post-156 audit under an explicit component-indexed interaction bound; this is a mathematical projection theorem, not physical validation.
+- **CANDIDATE-CONSISTENCY-LAW** — required or strongly suggested by a coherent physical master theory, but not established by the current source.
+- **OPEN-PHYSICS** — requires physical definitions, units, conservation, data, or validation.
 
 ## FS-T01 — Rank-3 Projection Count
 **PROVED-STRUCTURAL**
@@ -44,7 +45,7 @@ If every expected block is populated according to the source grammar, the statem
 
 `45 + 90 + 90 + 360 = 585`.
 
-The current source contains 578 because the S-P-A body is absent and H-P-A is missing.
+The restored current source contains the full expected 585 statements. The earlier 578-statement result is preserved only as the historical 2026-09-29 truncation audit.
 
 ## FS-T06 — Sector-Ablation Closure
 **PROVED-STRUCTURAL**
@@ -100,12 +101,14 @@ This is the key local gluing condition suggested by FieldSpace.
 
 # Candidate consistency laws
 
-## FS-C01 — Atlas Gluing Law
-**CANDIDATE-CONSISTENCY-LAW**
+## FS-C01 — Projected Atlas Gluing
+**PROVED-PROJECTED-GLUING**
 
-All triplet equations that share a lower-order sector subset should agree when every field outside that subset is set to zero.
+The corrected mathematical contract restricts both field inputs and equation outputs. For compatible rank-3 chart data, the Post-156 audit proves existence and uniqueness of a reconstructed global family inside an explicit component-indexed interaction class. For the 11-sector / 165-triplet atlas this is packaged as a kernel-checked projected-atlas gluing theorem.
 
-Failure would mean the catalog cannot be interpreted as projections of one global theory without additional context-dependent rules.
+This replaces the earlier over-strong full-vector premise. The old zero-padded full-vector counterexample remains valid, and ordinary unrestricted three-body dependence is not sufficient for uniqueness.
+
+The source audit reports 13,530 distinct chart pairs, 9,900 explicit retained-component comparisons, and zero explicit mismatches. This does not certify undefined physical mixed current/stress terms, vacuum conventions, conservation, or empirical validity.
 
 ## FS-C02 — Master-Action Reciprocity
 **CANDIDATE-CONSISTENCY-LAW**
