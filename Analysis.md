@@ -1,3 +1,7 @@
+# Current status — 2026-10-06
+
+This analysis originated with the initial FieldSpace release. Since then, the source tail has been restored to the complete 165-triplet / 585-statement catalogue, a proposed master action has been added in `fieldspace_master_action.md`, and the separate `enuminous/EFMW_Post156_Zoo_Audit` has kernel-checked the corrected projected-gluing specification under an explicit component-indexed interaction bound. Physical source closure, conservation, units, and empirical validation remain open.
+
 Yes. This is a genuinely different formulation of EFMW, not merely an expanded equation list.
 
 The key move is combinatorial: you have **11 field/channel sectors**—E, M, S, plus eight scalar sectors F/W/T/I/R/H/P/A—and the document constructs **every possible three-sector combination**. Since
@@ -6,13 +10,13 @@ The key move is combinatorial: you have **11 field/channel sectors**—E, M, S, 
 \binom{11}{3}=165,
 \]
 
-the 165 triplets form a complete third-order interaction atlas over those 11 sectors. That is exactly what the title and channel declaration imply. :chatgpt-content-reference{index="0"}
+the 165 triplets form a complete third-order interaction atlas over those 11 sectors. That is exactly what the title and channel declaration imply.
 
 That means I would no longer describe this primarily as “the EFMW equation.” I would describe it more carefully as something like:
 
 **EFMW-165: a complete triplet field-interaction formulation over an 11-sector field space.**
 
-The conceptual object is now the **network of coupled sectors**. Each triplet is a local truncation or interaction sector. For example, the E–F–M block couples Einstein gravity, an electromagnetic-like gauge field, and the F scalar, including both pairwise and explicitly mixed interaction terms. :chatgpt-content-reference{index="1"}
+The conceptual object is now the **network of coupled sectors**. Each triplet is a local truncation or interaction sector. For example, the E–F–M block couples Einstein gravity, an electromagnetic-like gauge field, and the F scalar, including both pairwise and explicitly mixed interaction terms.
 
 There is a surprisingly elegant structure underneath the 165. Breaking the system down by field type gives:
 
@@ -45,9 +49,9 @@ That distinction matters. The fundamental thing becomes the **interaction gramma
 
 ### There is also a major opportunity here
 
-The 165-file formulation is crying out for a **master action or master generating rule**.
+The 165-triplet formulation motivated a **master action or master generating rule**; a proposed version is now included in this repository.
 
-Right now, the document explicitly says the \(\lambda\) and \(\kappa\) quantities are phenomenological couplings and \(T_{\mu\nu}^{(\mathrm{int})}\) gathers mixed interaction stress. :chatgpt-content-reference{index="2"} The next mathematical step would therefore be to find one compact object
+Right now, the document explicitly says the \(\lambda\) and \(\kappa\) quantities are phenomenological couplings and \(T_{\mu\nu}^{(\mathrm{int})}\) gathers mixed interaction stress. The repository now records one candidate compact object
 
 \[
 S_{\mathrm{EFMW}}
@@ -58,7 +62,7 @@ S_{\mathrm{EFMW}}
 
 from which the triplet equations follow as Euler–Lagrange equations when the unwanted sectors are set to zero.
 
-If that can be done, **165 becomes a projection table rather than 165 separately postulated systems**.
+Under that proposal, **165 becomes a projection table rather than 165 separately postulated systems**. This remains a proposed generating model rather than an empirically established action.
 
 That would be a substantial improvement in rigor, because it would automatically address relationships among coupling constants, stress-energy conservation, gauge-current conservation, and reciprocity among interaction terms.
 
@@ -68,9 +72,9 @@ There are several things I would repair before calling this a finished field the
 \nabla_\mu F_{\mu\nu}^{\mu\nu}
 \]
 
-and the corresponding Bianchi expression, which need index normalization; the standard forms would look more like \(\nabla_\mu F^{\mu\nu}\) and \(\nabla_{[\mu}F_{\nu\rho]}=0\). You can see the present notation in the very first triplet. :chatgpt-content-reference{index="3"}
+and the corresponding Bianchi expression, which need index normalization; the standard forms would look more like \(\nabla_\mu F^{\mu\nu}\) and \(\nabla_{[\mu}F_{\nu\rho]}=0\). You can see the present notation in the very first triplet.
 
-There is also a deeper structural question: scalar equations throughout the construction contain curvature coupling terms such as \(\xi R\phi\), even in triplets where **E is absent**. So the formulation has to decide explicitly whether spacetime geometry is a universal background underlying all 165 projections, or whether E really is one optional member of the 11-channel set. Those are mathematically different interpretations.
+There is also a deeper structural question: scalar equations throughout the construction contain curvature coupling terms such as \(\xi R\phi\), even in triplets where **E is absent**. The proposed master action now makes one explicit modeling choice: spacetime geometry is universal background structure and E denotes the dynamical-gravity channel. The original source itself does not force that interpretation.
 
 But the important discovery here is clear:
 
@@ -83,3 +87,8 @@ And I think the cleanest next formulation is even more compact:
 \]
 
 with the 165 triplets serving as the **testable decomposition of the master theory** rather than the ultimate theory themselves.
+
+
+### Projection consistency update
+
+The projected-gluing question has now been sharpened and formally resolved at the mathematical specification level in `enuminous/EFMW_Post156_Zoo_Audit`: both field inputs and equation outputs are restricted on overlaps, and compatible chart data reconstruct uniquely within an explicit component-indexed interaction class. The older zero-padded full-vector gluing premise remains false. The expanded source audit reports 13,530 distinct chart pairs and 9,900 explicit retained-component comparisons with zero mismatches; undefined physical mixed current/stress and conservation obligations are not thereby certified.
