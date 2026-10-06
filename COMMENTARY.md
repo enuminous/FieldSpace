@@ -108,9 +108,9 @@ This means the catalog is not merely a list of uncoupled equations placed next t
 
 The open question is whether those interaction terms can be generated consistently from a smaller set of principles.
 
-## 6. The master-action problem
+## 6. The master-action proposal
 
-The strongest next step would be to replace the catalog's many separately written couplings with a master object, schematically:
+A proposed generating action is now included in [`fieldspace_master_action.md`](./fieldspace_master_action.md). It replaces the earlier purely open target with an explicit model candidate, schematically:
 
     S_FieldSpace = ∫ d⁴x √(-g) L_FieldSpace
 
@@ -123,11 +123,7 @@ A successful master action would ideally determine:
 - conservation identities;
 - which phenomenological parameters are genuinely independent.
 
-Then each of the 165 triplets could be produced by restricting the master theory to the selected three sectors.
-
-That would change the status of the 165 equations from individually proposed blocks to derived projections of one theory.
-
-No such derivation is included in the supplied source, so this remains a research target rather than a result.
+The proposal defines a projection rule for producing triplet systems from the larger field content. However, the action is separate from the verbatim source snapshot and has not been shown to be the unique or physically correct generator of the catalogue. Term-by-term source matching, gauge consistency, units, conservation, and empirical validation remain research obligations.
 
 ## 7. A distinction that must be made explicit: sector space versus spacetime
 
@@ -145,9 +141,7 @@ Under this interpretation, a non-E triplet can still live on curved spacetime.
 
 If E denotes the presence of gravitational geometry itself, then curvature-dependent terms in non-E blocks require explanation or revision.
 
-The repository does not select between these interpretations because the supplied source does not settle it.
-
-This should be resolved before attempting a complete action principle.
+The verbatim source does not select between these interpretations. The proposed master action now explicitly adopts Interpretation A: geometry is universal background structure and E denotes dynamical gravity. That choice is documented rather than retroactively read into the source.
 
 ## 8. Gauge notation requires an explicit normalization pass
 
@@ -206,7 +200,7 @@ For example, the F sector appears in 45 different triplets. If those blocks are 
 
 This is one of the best places to test whether FieldSpace is a single coherent theory or a catalog of related phenomenological models.
 
-## 11. Projection consistency as a decisive formal test
+## 11. Projection consistency: formal result and remaining physical test
 
 The combinatorial construction suggests a natural test.
 
@@ -219,13 +213,9 @@ Now define a larger four-sector model:
 
     (E, F, M, W)
 
-A coherent master formulation should reduce to the published E-F-M block when W is removed and to the published E-F-W block when M is removed.
+The separate Post-156 audit has now formalized the correct mathematical version of this requirement. Its projected-gluing contract restricts both inputs and observed equation components; under an explicit component-indexed interaction bound, compatible chart data admit a unique reconstructed global family in that class. The older zero-padded full-vector premise is explicitly not recovered.
 
-Repeat this across overlapping triplets.
-
-This projection-consistency program could provide a rigorous bridge from the current catalog to a unified master theory.
-
-Failure would also be informative: it would show that some triplet prescriptions cannot all be restrictions of the same global dynamics.
+The exhaustive source audit covers all 13,530 distinct chart pairs and finds zero mismatches across 9,900 explicit retained-component comparisons. That closes the specification-level projection gap for the explicit terms, but the physical test remains open wherever mixed current/stress, vacuum convention, conservation, units, or transformation laws are undefined.
 
 ## 12. Known-theory limits
 
