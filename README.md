@@ -1,4 +1,6 @@
 > [!IMPORTANT]
+> **2026-10-06 documentation/status update:** the complete 165-triplet source remains intact. A proposed master action is now included in this repository, and the corrected component-indexed projected-gluing theorem has been kernel-checked in `enuminous/EFMW_Post156_Zoo_Audit`. That result closes the mathematical projection-specification gap under an explicit interaction bound; it does **not** establish physical current/stress closure, conservation, units, or empirical validity. See [fieldspace_master_action.md](./fieldspace_master_action.md) and the [Post-156 projected gluing repair](https://github.com/enuminous/EFMW_Post156_Zoo_Audit/blob/main/docs/PROJECTED_GLUING_REPAIR.md).
+>
 > **2026-09-29 source-integrity correction:** an audit detected that the originally uploaded equation file had been truncated at its tail, leaving the S-P-A body empty and omitting H-P-A. The source has now been restored to the intended complete form: **165 triplet blocks, 165 populated triplets, 585 displayed statements, and 45 incidences per sector**. The dated audit remains in the repository as provenance of the truncation/correction event. See [AUDIT_2026-09-29.md](./AUDIT_2026-09-29.md), [ZOO_46_RUN.md](./ZOO_46_RUN.md), [THEOREM_REGISTER.md](./THEOREM_REGISTER.md), the [Lean formalization](./FieldSpace.lean), and the [toy simulator](./sim/fieldspace_sim.py).
 
 # FieldSpace
@@ -21,13 +23,15 @@ The site is GitHub Pages-ready from the repository root. Once Pages is enabled f
 
 - EFMW_165_field_equations.txt — complete master set of field equations for all 165 triplets.
 - COMMENTARY.md — structural interpretation, formal status, consistency obligations, and proposed next steps.
+- fieldspace_master_action.md — proposed generating action and explicit projection rule; a proposal, not a validated derivation of nature.
+- THEOREM_REGISTER.md — structural/algebraic results plus the current projected-gluing status boundary.
 - README.md — overview and navigation.
 
 ## Status
 
 **Proposed phenomenological formulation; independently unreviewed.**
 
-This repository does not by itself establish that the sectors correspond to distinct physical fields, that the couplings occur in nature, or that the full construction is a validated theory of fundamental physics. The source explicitly describes the lambda and kappa quantities as phenomenological couplings. No fitted parameter set, master action, dimensional table, or experimental validation dataset is included in the supplied equation file.
+This repository does not by itself establish that the sectors correspond to distinct physical fields, that the couplings occur in nature, or that the full construction is a validated theory of fundamental physics. The source explicitly describes the lambda and kappa quantities as phenomenological couplings. No fitted parameter set, dimensional table, or experimental validation dataset is included in the supplied equation file. A **proposed** master action is now included separately in this repository; it is not part of the verbatim equation source and has not been empirically validated.
 
 The equation source is therefore best read as a structured candidate interaction family and a specification for further mathematical and empirical work.
 
@@ -137,19 +141,17 @@ FieldSpace contains one dynamical block for every three-element subset of V.
 
 The central object is therefore not necessarily a single privileged equation. It can instead be treated as a rule assigning a coupled dynamical system to every rank-3 projection of the larger sector space.
 
-That interpretation suggests a stronger future formulation:
+That interpretation motivates a master formulation. A proposed generating action is now recorded in [fieldspace_master_action.md](./fieldspace_master_action.md), with geometry treated as universal background structure and E as the dynamical-gravity channel. It is a model proposal, not a result contained in the verbatim source.
 
-> derive the triplet systems from one master action or generating rule, then recover the 165 blocks as consistent restrictions/projections.
-
-At present, the supplied file does not provide such a master action.
+Separately, the Post-156 audit has kernel-checked a **projected gluing** theorem: after restricting both field inputs and equation outputs, compatible rank-3 chart data admit reconstruction and uniqueness inside an explicit component-indexed interaction class. This replaces the earlier over-strong full-vector gluing premise; it does not make the old zero-padded full-vector assertion true.
 
 ## Formal issues to resolve
 
 The source is intentionally preserved verbatim. Several items should be settled in a later normalization pass rather than silently changed here.
 
-### 1. Master action
+### 1. Master action / generating rule
 
-A Lagrangian or action principle should be specified if the 165 systems are intended to arise from a single coherent field theory. This would constrain reciprocal couplings and stress-energy terms and make conservation analysis substantially cleaner.
+A proposed action is now included in [fieldspace_master_action.md](./fieldspace_master_action.md). The remaining task is to verify, term by term, that an accepted normalized source model is generated by that action and to decide which non-gauge-invariant phenomenological terms are retained, modified, or rejected.
 
 ### 2. Gauge-index normalization
 
@@ -162,7 +164,7 @@ These should be reviewed against the intended tensor definitions. If the intende
 
 ### 3. Geometry when E is absent
 
-Scalar equations continue to use □_g, R, or related curvature structures in triplets that do not contain the E channel. The framework therefore needs to state whether geometry is universal background structure and E denotes only dynamical gravity, or whether E is the geometry/gravity sector itself and curvature terms should be handled differently when it is absent.
+The proposed master action now makes one explicit choice: geometry is universal background structure and E denotes dynamical gravity, so non-E triplets may still use □_g and R without varying the metric. This is a declared modeling choice, not something forced by the original source.
 
 ### 4. Dimensions and units
 
@@ -170,7 +172,7 @@ A dimensional table is required for every field, coupling, current, mass term, a
 
 ### 5. Interaction tensors and currents
 
-T_{μν}^{(int)}, Ξ^ν, and the channel currents need explicit definitions or generating rules.
+The proposed master action gives variational definitions for `T_{μν}^{(int)}` and `Ξ^ν`. The source-level physical mixed current/stress, their units and transformation laws, and their exact identification with the catalogue placeholders remain unresolved.
 
 ### 6. Symmetry and conservation
 
@@ -187,9 +189,9 @@ A rigorous development path would be:
 1. freeze the 165-triplet source as a versioned reference;
 2. normalize notation without changing content;
 3. define fields, units, signatures, domains, and boundary conditions;
-4. propose a master Lagrangian/action or explicit generating rule;
-5. derive each triplet as a projection of that master object;
-6. test gauge and stress-energy consistency;
+4. test and refine the proposed master Lagrangian/action against the normalized source;
+5. use the kernel-checked projected-gluing result as the mathematical projection contract, while separately checking physical source closure;
+6. test gauge and stress-energy consistency and conservation;
 7. determine independent versus redundant coupling parameters;
 8. identify known-theory limits and equivalent prior formulations;
 9. formalize algebraic identities and projection rules;
