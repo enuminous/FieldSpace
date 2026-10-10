@@ -1,3 +1,18 @@
+
+
+<!-- ENUMINOUS-NETWORK:START -->
+**eNuminous network:** [All repositories](https://enuminous.github.io/EFMW/repositories.html) · [EFMW](https://enuminous.github.io/EFMW/) · [102 equations](https://github.com/enuminous/Monolithic_102_EFMW) · [165 triplets](https://enuminous.github.io/FieldSpace/) · [Zoo](https://enuminous.github.io/Tortoise/) · [Lean](https://enuminous.github.io/Aristotle-102-Monolithic-Lean/) · [Engine](https://enuminous.github.io/Archimedes-Engine/) · [Papers](https://enuminous.github.io/medium/papers-essays-index.html) · [Audit](https://github.com/enuminous/EFMW_Post156_Zoo_Audit/blob/main/portfolio/INTERLOCK_AUDIT.md)
+
+[Repository](https://github.com/enuminous/FieldSpace) · [Published page](https://enuminous.github.io/FieldSpace/)
+
+<details>
+<summary>Repository indexes (1)</summary>
+
+- [index.html](https://github.com/enuminous/FieldSpace/blob/main/index.html) · [Open page](https://enuminous.github.io/FieldSpace/index.html)
+
+</details>
+<!-- ENUMINOUS-NETWORK:END -->
+
 > [!IMPORTANT]
 > **2026-10-06 documentation/status update:** the complete 165-triplet source remains intact. A proposed master action is now included in this repository, and the corrected component-indexed projected-gluing theorem has been kernel-checked in `enuminous/EFMW_Post156_Zoo_Audit`. That result closes the mathematical projection-specification gap under an explicit interaction bound; it does **not** establish physical current/stress closure, conservation, units, or empirical validity. See [fieldspace_master_action.md](./fieldspace_master_action.md) and the [Post-156 projected gluing repair](https://github.com/enuminous/EFMW_Post156_Zoo_Audit/blob/main/docs/PROJECTED_GLUING_REPAIR.md).
 >
