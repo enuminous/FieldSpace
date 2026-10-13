@@ -10,7 +10,7 @@ open Lean in
 run_cmd do
   let env ← getEnv
   let modules : Array Name := #[`FieldSpace, `FieldSpace.Ablations, `FieldSpace.Coupling, `FieldSpace.Structure]
-  let allowed : Array Name := #[``propext, ``Classical.choice, ``Quot.sound, ``Lean.ofReduceBool]
+  let allowed : Array Name := #[``propext, ``Classical.choice, ``Quot.sound]
   let mut count := 0
   let mut theoremCount := 0
   for (name, info) in env.constants.toList do
