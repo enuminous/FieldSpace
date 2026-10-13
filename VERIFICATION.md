@@ -19,3 +19,5 @@ Native proof evaluation is rejected. The existing finite enumeration statements 
 The successful job summary records the exact commit and workflow run. Source
 declarations and hypotheses determine the mathematical scope; a successful
 build does not validate a broader empirical or scientific interpretation.
+
+The source-atlas regression previously expected the historical 164-heading defect. The committed source now contains all 165 populated blocks. The regression now requires exactly that complete atlas, including distinct headings and a nonempty body for every block. The retained generated recovery patch is a historical artifact.
