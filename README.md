@@ -1,39 +1,53 @@
 
 
-<!-- ENUMINOUS-NETWORK:START -->
-**eNuminous network:** [All repositories](https://enuminous.github.io/EFMW/repositories.html) · [EFMW](https://enuminous.github.io/EFMW/) · [102 equations](https://github.com/enuminous/Monolithic_102_EFMW) · [165 triplets](https://enuminous.github.io/FieldSpace/) · [Zoo](https://enuminous.github.io/Tortoise/) · [Lean](https://enuminous.github.io/Aristotle-102-Monolithic-Lean/) · [Engine](https://enuminous.github.io/Archimedes-Engine/) · [Papers](https://enuminous.github.io/medium/papers-essays-index.html) · [Audit](https://github.com/enuminous/EFMW_Post156_Zoo_Audit/blob/main/portfolio/INTERLOCK_AUDIT.md)
-
-[Repository](https://github.com/enuminous/FieldSpace) · [Published page](https://enuminous.github.io/FieldSpace/)
-
-<details>
-<summary>Recent repositories (9)</summary>
-
-- [Oroboros](https://github.com/enuminous/Oroboros) · [README](https://github.com/enuminous/Oroboros/blob/main/README.md) · [Page](https://enuminous.github.io/Oroboros/)
-- [P-NP](https://github.com/enuminous/P-NP) · [README](https://github.com/enuminous/P-NP/blob/main/README.md) · [Page](https://enuminous.github.io/P-NP/)
-- [Research-Program](https://github.com/enuminous/Research-Program) · [README](https://github.com/enuminous/Research-Program/blob/main/README.md) · [Page](https://enuminous.github.io/Research-Program/)
-- [I-Have-Guts](https://github.com/enuminous/I-Have-Guts) · [README](https://github.com/enuminous/I-Have-Guts/blob/main/README.md) · [Page](https://enuminous.github.io/I-Have-Guts/)
-- [Wrights-Law](https://github.com/enuminous/Wrights-Law) · [README](https://github.com/enuminous/Wrights-Law/blob/main/README.md) · [Page](https://enuminous.github.io/Wrights-Law/)
-- [Aristotle-eNuminous](https://github.com/enuminous/Aristotle-eNuminous) · [README](https://github.com/enuminous/Aristotle-eNuminous/blob/main/README.md) · [Page](https://enuminous.github.io/Aristotle-eNuminous/)
-- [Multiverse-Simulator](https://github.com/enuminous/Multiverse-Simulator) · [README](https://github.com/enuminous/Multiverse-Simulator/blob/main/README.md) · [Page](https://enuminous.github.io/Multiverse-Simulator/)
-- [accelerando-8192](https://github.com/enuminous/accelerando-8192) · [README](https://github.com/enuminous/accelerando-8192/blob/main/README.md) · [Page source](https://github.com/enuminous/accelerando-8192/blob/main/docs/index.html)
-- [Codex-888](https://github.com/enuminous/Codex-888) · [README](https://github.com/enuminous/Codex-888/blob/main/README.md) · [Page](https://enuminous.github.io/Codex-888/)
-
-</details>
-
-<details>
-<summary>Repository indexes (1)</summary>
-
-- [index.html](https://github.com/enuminous/FieldSpace/blob/main/index.html) · [Open page](https://enuminous.github.io/FieldSpace/index.html)
-
-</details>
-<!-- ENUMINOUS-NETWORK:END -->
-
 > [!IMPORTANT]
 > **2026-10-06 documentation/status update:** the complete 165-triplet source remains intact. A proposed master action is now included in this repository, and the corrected component-indexed projected-gluing theorem has been kernel-checked in `enuminous/EFMW_Post156_Zoo_Audit`. That result closes the mathematical projection-specification gap under an explicit interaction bound; it does **not** establish physical current/stress closure, conservation, units, or empirical validity. See [fieldspace_master_action.md](./fieldspace_master_action.md) and the [Post-156 projected gluing repair](https://github.com/enuminous/EFMW_Post156_Zoo_Audit/blob/main/docs/PROJECTED_GLUING_REPAIR.md).
 >
 > **2026-09-29 source-integrity correction:** an audit detected that the originally uploaded equation file had been truncated at its tail, leaving the S-P-A body empty and omitting H-P-A. The source has now been restored to the intended complete form: **165 triplet blocks, 165 populated triplets, 585 displayed statements, and 45 incidences per sector**. The dated audit remains in the repository as provenance of the truncation/correction event. See [AUDIT_2026-09-29.md](./AUDIT_2026-09-29.md), [ZOO_46_RUN.md](./ZOO_46_RUN.md), [THEOREM_REGISTER.md](./THEOREM_REGISTER.md), the [Lean formalization](./FieldSpace.lean), and the [toy simulator](./sim/fieldspace_sim.py).
 
 # FieldSpace
+
+<!-- ENUMINOUS-UNIFIED-NAV:START -->
+## Repository navigation
+
+**eNuminous network:** [All public repositories](https://github.com/enuminous/EFMW/blob/main/REPOSITORY_NAVIGATION.md) · [EFMW](https://github.com/enuminous/EFMW) · [102 equations](https://github.com/enuminous/Monolithic_102_EFMW) · [Frozen Lean](https://github.com/enuminous/Monolithic-102-Zoo-Lean4) · [Zoo](https://github.com/enuminous/Tortoise) · [Papers](https://github.com/enuminous/papers) · [Quantum geometry](https://github.com/enuminous/Base888-Quantum-Geometry)
+
+**This project:** [Repository home](https://github.com/enuminous/FieldSpace) · [Subject index](https://github.com/enuminous/EFMW/blob/main/REPOSITORY_NAVIGATION.md#fundamental-physics-cosmology-and-quantum-geometry) · [Published site](https://enuminous.github.io/FieldSpace/) · [Web application](index.html)
+
+<details open>
+<summary><strong>On this page</strong></summary>
+
+- [Website](#website)
+- [Repository contents](#repository-contents)
+- [Status](#status)
+- [The 11 sectors](#the-11-sectors)
+- [Why there are exactly 165 triplets](#why-there-are-exactly-165-triplets)
+- [Structural taxonomy](#structural-taxonomy)
+- [Equation inventory](#equation-inventory)
+- [Core pattern](#core-pattern)
+- [Source notation](#source-notation)
+- [A useful mathematical interpretation](#a-useful-mathematical-interpretation)
+- [Formal issues to resolve](#formal-issues-to-resolve)
+  - [1. Master action / generating rule](#1-master-action--generating-rule)
+  - [2. Gauge-index normalization](#2-gauge-index-normalization)
+  - [3. Geometry when E is absent](#3-geometry-when-e-is-absent)
+  - [4. Dimensions and units](#4-dimensions-and-units)
+  - [5. Interaction tensors and currents](#5-interaction-tensors-and-currents)
+  - [6. Symmetry and conservation](#6-symmetry-and-conservation)
+  - [7. Parameter economy](#7-parameter-economy)
+- [Research program suggested by the formulation](#research-program-suggested-by-the-formulation)
+- [Versioning principle](#versioning-principle)
+- [Provenance](#provenance)
+- [License and rights](#license-and-rights)
+
+
+</details>
+
+**Related repositories:** [Cat-Physics](https://github.com/enuminous/Cat-Physics) · [Cosmology](https://github.com/enuminous/Cosmology) · [Universe5](https://github.com/enuminous/Universe5) · [QST](https://github.com/enuminous/QST) · [EFMW](https://github.com/enuminous/EFMW) · [papers](https://github.com/enuminous/papers)
+
+> **Evidence boundary:** A link between projects is navigation, not an assertion of proven equivalence, experimental validation, or shared authorship. See each repository’s own status and review notes.
+<!-- ENUMINOUS-UNIFIED-NAV:END -->
+
 
 EFMW FieldSpace is a repository for the complete 165-triplet field-interaction formulation supplied as the current EFMW field-space master set.
 
